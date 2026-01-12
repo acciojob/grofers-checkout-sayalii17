@@ -19,10 +19,14 @@ const getSum = () => {
     totalRow.id = "total-row";
 
     const totalCell = document.createElement("td");
-    totalCell.colSpan = 2;
-    totalCell.textContent = `Total Price: Rs ${sum}`;
+    totalCell.textContent = "Total Price";
+
+	const totalCell2 = document.createElement("td");
+	totalCell2.id= "ans";
+    totalCell2.textContent = `${sum}`;
 
     totalRow.appendChild(totalCell);
+	totalRow.appendChild(totalCell2);
     table.appendChild(totalRow);
 };
 
